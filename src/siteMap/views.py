@@ -5,3 +5,6 @@ from django.http import HttpResponseRedirect
 
 def homeRedirect(request):
     return HttpResponseRedirect('/home')
+
+def home(request):
+    return render(request, 'siteMap/layout.html')
